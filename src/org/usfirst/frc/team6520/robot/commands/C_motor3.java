@@ -15,7 +15,7 @@ public class C_motor3 extends Command {
     	if (RobotMap.motor3.getSpeed() == 0) {
     		RobotMap.motor3.set(0.5);
     	} else {
-    		RobotMap.motor3.disable();
+    		RobotMap.motor3.stopMotor();;
     	}
     }
 
