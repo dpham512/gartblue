@@ -39,9 +39,9 @@ public class RobotMap {
 	public static Encoder encRight = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
 	
 	// Motors
-	public static Spark spLeft = new Spark(0);
-	public static Spark spRight = new Spark(1);
-	public static Spark motor3 = new Spark(2);
+	public static Spark spLeft = new Spark(1);
+	public static Spark spRight = new Spark(0);
+	public static Spark motor3 = new Spark(3);
 	
 	// Differential Drive
 	public static DifferentialDrive mDrive = new DifferentialDrive(spLeft, spRight);
