@@ -7,7 +7,11 @@
 
 package org.usfirst.frc.team6520.robot;
 
+import org.usfirst.frc.team6520.robot.commands.C_motor3;
+
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -44,8 +48,12 @@ public class OI {
 	
 	public Joystick mJoystick = new Joystick(0);
 	
+	public Button motor3Controller = new JoystickButton(mJoystick, 3);
+	
+	public Button encController = new JoystickButton(mJoystick, 1);
+	
 	public OI() {
-		
+		motor3Controller.whenPressed(new C_motor3());
 	}
 	
 }

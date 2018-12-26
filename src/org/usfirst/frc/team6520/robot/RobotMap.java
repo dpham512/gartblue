@@ -9,7 +9,9 @@ package org.usfirst.frc.team6520.robot;
 
 import org.usfirst.frc.team6520.robot.subsystems.DriveBase;
 
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
@@ -32,8 +34,15 @@ public class RobotMap {
 	// Subsystems
 	public static DriveBase mDriveBase = new DriveBase();
 	
+	// Encoder
+	public static Encoder enc = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+	
 	// Motors
 	public static Spark spLeft = new Spark(0);
 	public static Spark spRight = new Spark(1);
+	public static Spark motor3 = new Spark(2);
+	
+	// Differential Drive
+	public static DifferentialDrive mDrive = new DifferentialDrive(spLeft, spRight);
 	
 }
