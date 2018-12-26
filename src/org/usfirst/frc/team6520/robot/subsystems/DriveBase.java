@@ -30,7 +30,7 @@ public class DriveBase extends Subsystem {
      * @param timer: Time to move to the destination.
      * @param direction: -1.0 (backward) or 1.0 (forward).
      */
-    public void atonomousStraight(int timer, double direction) {
+    public void atonomousStraight(double timer, double direction) {
     	double t = Timer.getFPGATimestamp();
     	while (Timer.getFPGATimestamp() <= t + timer) {
     		RobotMap.spLeft.set(distanceSpeed * direction);
