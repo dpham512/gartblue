@@ -7,13 +7,11 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class C_Key1 extends Command {
+public class C_KeyOff extends Command {
 
-    public C_Key1() {
+    public C_KeyOff() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.key1.set(0.2);
-    	RobotMap.key2.set(-0.2);
     	RobotMap.key1.stopMotor();
     	RobotMap.key2.stopMotor();
     }

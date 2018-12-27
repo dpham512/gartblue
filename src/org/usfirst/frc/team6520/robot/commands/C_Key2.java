@@ -14,6 +14,8 @@ public class C_Key2 extends Command {
         // eg. requires(chassis);
     	RobotMap.key1.set(-0.2);
     	RobotMap.key2.set(0.2);
+    	RobotMap.key1.stopMotor();
+    	RobotMap.key2.stopMotor();
     }
 
     // Called just before this Command runs the first time
