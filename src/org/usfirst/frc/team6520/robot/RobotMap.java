@@ -44,8 +44,9 @@ public class RobotMap {
 	// Motors
 	public static Spark spLeft = new Spark(1);
 	public static Spark spRight = new Spark(0);
-	public static Spark motor3 = new Spark(3);
-	public static Spark key = new Spark(2);
+	public static Spark motor3 = new Spark(2);
+	public static Spark key1 = new Spark(3);
+	public static Spark key2 = new Spark(4);
 	
 	// Differential Drive
 	public static DifferentialDrive mDrive = new DifferentialDrive(spLeft, spRight);

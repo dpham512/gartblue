@@ -15,8 +15,8 @@ public class DriveBase extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-	public static final double distanceSpeed = 0.4;
-	public static final double angleSpeed = 0.4;
+	public static final double distanceSpeed = 0.5;
+	public static final double angleSpeed = 0.5;
 	public static final double angleTime = 1;
 	
     public void initDefaultCommand() {

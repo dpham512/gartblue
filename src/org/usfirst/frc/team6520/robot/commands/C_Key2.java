@@ -12,7 +12,8 @@ public class C_Key2 extends Command {
     public C_Key2() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.key.set(-0.2);
+    	RobotMap.key1.set(-0.2);
+    	RobotMap.key2.set(0.2);
     }
 
     // Called just before this Command runs the first time

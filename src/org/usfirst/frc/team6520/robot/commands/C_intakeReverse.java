@@ -7,12 +7,12 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class C_motor3 extends Command {
+public class C_intakeReverse extends Command {
 
-    public C_motor3() {
+    public C_intakeReverse() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.motor3.set(-0.5);
+    	RobotMap.motor3.set(0.2);
     }
 
     // Called just before this Command runs the first time
