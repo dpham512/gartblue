@@ -7,7 +7,8 @@
 
 package org.usfirst.frc.team6520.robot;
 
-import org.usfirst.frc.team6520.robot.commands.C_Keys;
+import org.usfirst.frc.team6520.robot.commands.C_Key1;
+import org.usfirst.frc.team6520.robot.commands.C_Key2;
 import org.usfirst.frc.team6520.robot.commands.C_motor3;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -51,14 +52,16 @@ public class OI {
 	public Joystick mJoystick = new Joystick(0);
 	
 	// Intake Button
-	public Button motor3Controller = new JoystickButton(mJoystick, 3);
+	public Button motor3Controller = new JoystickButton(mJoystick, 2);
 	
 	// Key button
-	public Button keyController = new JoystickButton(mJoystick, 1);
+	public Button key1 = new JoystickButton(mJoystick, 1);
+	public Button key2 = new JoystickButton(mJoystick, 3);
 	
 	public OI() {
 		motor3Controller.whenPressed(new C_motor3());
-		keyController.whenPressed(new C_Keys());
+		key1.whileHeld(new C_Key1());
+		key2.whileHeld(new C_Key2());
 	}
 	
 }

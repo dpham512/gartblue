@@ -2,30 +2,17 @@ package org.usfirst.frc.team6520.robot.commands;
 
 import org.usfirst.frc.team6520.robot.RobotMap;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class C_Keys extends Command {
+public class C_Key1 extends Command {
 
-    public C_Keys() {
+    public C_Key1() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	double speed = 0.4;
-    	double time = 0.5;
-    	if (!RobotMap.keyActivated) {
-    		speed = -0.4;
-    		RobotMap.keyActivated = true;
-    	} else {
-    		RobotMap.keyActivated = false;
-    	}
-    	double t = Timer.getFPGATimestamp();
-    	while (Timer.getFPGATimestamp() <= t + time) {
-    		RobotMap.key.set(speed);
-    	}
-    	RobotMap.key.stopMotor();
+    	RobotMap.key.set(0.2);
     }
 
     // Called just before this Command runs the first time
