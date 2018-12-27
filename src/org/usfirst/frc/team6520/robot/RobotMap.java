@@ -31,6 +31,9 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
+	// Check if keys is activated
+	public static boolean keyActivated = false;
+	
 	// Subsystems
 	public static DriveBase mDriveBase = new DriveBase();
 	
@@ -42,6 +45,7 @@ public class RobotMap {
 	public static Spark spLeft = new Spark(1);
 	public static Spark spRight = new Spark(0);
 	public static Spark motor3 = new Spark(3);
+	public static Spark key = new Spark(2);
 	
 	// Differential Drive
 	public static DifferentialDrive mDrive = new DifferentialDrive(spLeft, spRight);
