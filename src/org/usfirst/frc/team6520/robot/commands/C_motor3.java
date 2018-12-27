@@ -13,7 +13,7 @@ public class C_motor3 extends Command {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	if (RobotMap.motor3.getSpeed() == 0) {
-    		RobotMap.motor3.set(0.5);
+    		RobotMap.motor3.set(0.2);
     	} else {
     		RobotMap.motor3.stopMotor();;
     	}
