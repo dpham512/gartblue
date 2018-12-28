@@ -5,7 +5,7 @@ import org.usfirst.frc.team6520.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *	Run intake
  */
 public class C_motor3 extends Command {
 

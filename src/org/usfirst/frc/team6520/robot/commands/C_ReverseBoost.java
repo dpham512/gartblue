@@ -5,23 +5,22 @@ import org.usfirst.frc.team6520.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *	Reverse boost
  */
-public class C_intakeReverse extends Command {
+public class C_ReverseBoost extends Command {
 
-    public C_intakeReverse() {
+    public C_ReverseBoost() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.mDriveBase.switchMode(0.2);
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	RobotMap.mDriveBase.boost(-1);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -36,5 +35,6 @@ public class C_intakeReverse extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	RobotMap.mDriveBase.releaseBoost();
     }
 }

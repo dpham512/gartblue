@@ -5,7 +5,7 @@ import org.usfirst.frc.team6520.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *	Boost
  */
 public class C_Boost extends Command {
 
@@ -22,7 +22,7 @@ public class C_Boost extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	RobotMap.mDriveBase.boost();
+    	RobotMap.mDriveBase.boost(1);
     }
 
     // Make this return true when this Command no longer needs to run execute()

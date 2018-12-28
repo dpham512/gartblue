@@ -35,14 +35,10 @@ public class RobotMap {
 	// Subsystems
 	public static DriveBase mDriveBase = new DriveBase();
 	
-	// Encoder
-//	public static Encoder encLeft = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
-//	public static Encoder encRight = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
-	
 	// Motors
 	public static Spark spLeft = new Spark(1);
 	public static Spark spRight = new Spark(0);
-	public static Spark motor3 = new Spark(2);
+	public static Spark motor3 = new Spark(2);	//Intake
 	public static Spark key1 = new Spark(3);
 	public static Spark key2 = new Spark(4);
 	

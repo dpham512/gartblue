@@ -5,7 +5,7 @@ import org.usfirst.frc.team6520.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *	Activate keys
  */
 public class C_Key1 extends Command {
 

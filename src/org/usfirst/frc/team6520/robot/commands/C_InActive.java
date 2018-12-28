@@ -5,7 +5,7 @@ import org.usfirst.frc.team6520.robot.RobotMap;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ *	Reverse intake
  */
 public class C_InActive extends Command {
 
@@ -35,6 +35,6 @@ public class C_InActive extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	RobotMap.mDriveBase.switchMode(-0.4);
+    	RobotMap.mDriveBase.switchMode(-0.4);	//Return normal statement
     }
 }

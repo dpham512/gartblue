@@ -11,9 +11,7 @@ import org.usfirst.frc.team6520.robot.commands.C_Boost;
 import org.usfirst.frc.team6520.robot.commands.C_InActive;
 import org.usfirst.frc.team6520.robot.commands.C_Key1;
 import org.usfirst.frc.team6520.robot.commands.C_Key2;
-//import org.usfirst.frc.team6520.robot.commands.C_ReleaseBoost;
-import org.usfirst.frc.team6520.robot.commands.C_intakeOff;
-import org.usfirst.frc.team6520.robot.commands.C_intakeReverse;
+import org.usfirst.frc.team6520.robot.commands.C_ReverseBoost;
 import org.usfirst.frc.team6520.robot.commands.C_motor3;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -57,8 +55,7 @@ public class OI {
 	public Joystick mJoystick = new Joystick(0);
 	
 	// Intake Button
-	public Button motor3Controller = new JoystickButton(mJoystick, 7);
-	public Button intakeOff = new JoystickButton(mJoystick, 8);
+	public Button motor3Controller = new JoystickButton(mJoystick, 7);	//Intake
 	public Button intakeReverse = new JoystickButton(mJoystick, 2);
 	
 	// Key button
@@ -66,15 +63,17 @@ public class OI {
 	public Button key2 = new JoystickButton(mJoystick, 5);
 	
 	// Boost button
-	public Button boost = new JoystickButton(mJoystick, 12);
+	public Button rvboost = new JoystickButton(mJoystick, 12);	//Backward
+	public Button boost = new JoystickButton(mJoystick, 11);	//Forward
 	
 	public OI() {
+		//Trigger
 		motor3Controller.whenPressed(new C_motor3());
-//		intakeOff.whenPressed(new C_intakeOff());
 		intakeReverse.whileHeld(new C_InActive());
 		key1.whileHeld(new C_Key1());
 		key2.whileHeld(new C_Key2());
 		boost.whileHeld(new C_Boost());
+		rvboost.whileHeld(new C_ReverseBoost());
 	}
 	
 }
