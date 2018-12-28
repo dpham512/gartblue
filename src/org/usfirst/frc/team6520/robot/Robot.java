@@ -109,7 +109,7 @@ public class Robot extends TimedRobot {
 	 */
 	@Override
 	public void teleopPeriodic() {
-		RobotMap.mDrive.tankDrive(-m_oi.mJoystick.getRawAxis(1), -m_oi.mJoystick.getRawAxis(3));
+		RobotMap.mDriveBase.teleUpdate(m_oi);
 		Scheduler.getInstance().run();
 	}
 

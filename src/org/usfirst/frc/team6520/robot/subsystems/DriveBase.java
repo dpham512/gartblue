@@ -1,11 +1,10 @@
 package org.usfirst.frc.team6520.robot.subsystems;
 
+import org.usfirst.frc.team6520.robot.OI;
 import org.usfirst.frc.team6520.robot.RobotMap;
 
-import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 /**
  *
@@ -18,6 +17,7 @@ public class DriveBase extends Subsystem {
 	public static final double distanceSpeed = 0.5;
 	public static final double angleSpeed = 0.5;
 	public static final double angleTime = 1;
+	private static double teleSpeed = 0.4;
 	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -53,6 +53,18 @@ public class DriveBase extends Subsystem {
     	}
     	RobotMap.spLeft.stopMotor();
     	RobotMap.spRight.stopMotor();
+    }
+    
+    public void teleUpdate(OI m_oi) {
+    	RobotMap.mDrive.tankDrive(-m_oi.mJoystick.getRawAxis(1) * teleSpeed, -m_oi.mJoystick.getRawAxis(3) * teleSpeed);
+    }
+    
+    public void boost() {
+    	teleSpeed = 1;
+    }
+    
+    public void releaseBoost() {
+    	teleSpeed = 0.4;
     }
     
 }

@@ -9,7 +9,6 @@ package org.usfirst.frc.team6520.robot;
 
 import org.usfirst.frc.team6520.robot.subsystems.DriveBase;
 
-import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
@@ -31,8 +30,7 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
-	// Check if keys is activated
-	public static boolean keyActivated = false;
+	
 	
 	// Subsystems
 	public static DriveBase mDriveBase = new DriveBase();
