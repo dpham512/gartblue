@@ -61,18 +61,18 @@ public class OI {
 	public Button intakeReverse = new JoystickButton(mJoystick, 2);
 	
 	// Key button
-	public Button key1 = new JoystickButton(mJoystick, 11);
-	public Button key2 = new JoystickButton(mJoystick, 12);
+	public Button key1 = new JoystickButton(mJoystick, 1);
+	public Button key2 = new JoystickButton(mJoystick, 5);
 	
 	// Boost button
-	public Button boost = new JoystickButton(mJoystick, 5);
+	public Button boost = new JoystickButton(mJoystick, 12);
 	
 	public OI() {
 		motor3Controller.whenPressed(new C_motor3());
 //		intakeOff.whenPressed(new C_intakeOff());
 		intakeReverse.whenPressed(new C_intakeReverse());
-		key1.whenPressed(new C_Key1());
-		key2.whenPressed(new C_Key2());
+		key1.whileHeld(new C_Key1());
+		key2.whileHeld(new C_Key2());
 		boost.whileHeld(new C_Boost());
 	}
 	

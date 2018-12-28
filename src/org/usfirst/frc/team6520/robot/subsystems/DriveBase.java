@@ -55,7 +55,7 @@ public class DriveBase extends Subsystem {
     }
     
     public void teleUpdate(OI m_oi) {
-    	RobotMap.mDrive.tankDrive(-m_oi.mJoystick.getRawAxis(1) * 0.4, -m_oi.mJoystick.getRawAxis(3) * 0.4);
+    	RobotMap.mDrive.tankDrive(-m_oi.mJoystick.getRawAxis(1) * 0.6, -m_oi.mJoystick.getRawAxis(3) * 0.6);
     }
     
     public void boost() {
