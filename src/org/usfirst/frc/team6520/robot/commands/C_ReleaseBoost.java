@@ -17,7 +17,7 @@ public class C_ReleaseBoost extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.mDriveBase.releaseBoost();
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run

@@ -10,7 +10,7 @@ package org.usfirst.frc.team6520.robot;
 import org.usfirst.frc.team6520.robot.commands.C_Boost;
 import org.usfirst.frc.team6520.robot.commands.C_Key1;
 import org.usfirst.frc.team6520.robot.commands.C_Key2;
-import org.usfirst.frc.team6520.robot.commands.C_ReleaseBoost;
+//import org.usfirst.frc.team6520.robot.commands.C_ReleaseBoost;
 import org.usfirst.frc.team6520.robot.commands.C_intakeOff;
 import org.usfirst.frc.team6520.robot.commands.C_intakeReverse;
 import org.usfirst.frc.team6520.robot.commands.C_motor3;
@@ -74,7 +74,7 @@ public class OI {
 		key1.whileHeld(new C_Key1());
 		key2.whileHeld(new C_Key2());
 		boost.whileHeld(new C_Boost());
-		boost.whenReleased(new C_ReleaseBoost());
+//		boost.whenReleased(new C_ReleaseBoost());
 	}
 	
 }
