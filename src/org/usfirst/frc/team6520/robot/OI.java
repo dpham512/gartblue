@@ -56,16 +56,16 @@ public class OI {
 	public Joystick mJoystick = new Joystick(0);
 	
 	// Intake Button
-	public Button motor3Controller = new JoystickButton(mJoystick, 6);
-	public Button intakeOff = new JoystickButton(mJoystick, 7);
-	public Button intakeReverse = new JoystickButton(mJoystick, 1);
+	public Button motor3Controller = new JoystickButton(mJoystick, 7);
+	public Button intakeOff = new JoystickButton(mJoystick, 8);
+	public Button intakeReverse = new JoystickButton(mJoystick, 2);
 	
 	// Key button
-	public Button key1 = new JoystickButton(mJoystick, 10);
-	public Button key2 = new JoystickButton(mJoystick, 11);
+	public Button key1 = new JoystickButton(mJoystick, 11);
+	public Button key2 = new JoystickButton(mJoystick, 12);
 	
 	// Boost button
-	public Button boost = new JoystickButton(mJoystick, 4);
+	public Button boost = new JoystickButton(mJoystick, 5);
 	
 	public OI() {
 		motor3Controller.whenPressed(new C_motor3());
