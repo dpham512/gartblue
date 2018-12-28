@@ -12,11 +12,12 @@ public class C_motor3 extends Command {
     public C_motor3() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.motor3.set(-0.5);
+    	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.motor3.set(-0.5);
     }
 
     // Called repeatedly when this Command is scheduled to run

@@ -12,11 +12,12 @@ public class C_intakeReverse extends Command {
     public C_intakeReverse() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.motor3.set(0.2);
+    	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.motor3.set(0.2);
     }
 
     // Called repeatedly when this Command is scheduled to run

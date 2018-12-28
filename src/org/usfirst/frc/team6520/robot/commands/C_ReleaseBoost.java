@@ -12,11 +12,12 @@ public class C_ReleaseBoost extends Command {
     public C_ReleaseBoost() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.mDriveBase.releaseBoost();
+    	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.mDriveBase.releaseBoost();
     }
 
     // Called repeatedly when this Command is scheduled to run

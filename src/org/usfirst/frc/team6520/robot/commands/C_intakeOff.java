@@ -12,11 +12,12 @@ public class C_intakeOff extends Command {
     public C_intakeOff() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	RobotMap.motor3.stopMotor();
+    	
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.motor3.stopMotor();
     }
 
     // Called repeatedly when this Command is scheduled to run
