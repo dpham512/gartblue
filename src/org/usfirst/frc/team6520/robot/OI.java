@@ -9,7 +9,6 @@ package org.usfirst.frc.team6520.robot;
 
 import org.usfirst.frc.team6520.robot.commands.C_Key1;
 import org.usfirst.frc.team6520.robot.commands.C_Key2;
-import org.usfirst.frc.team6520.robot.commands.C_KeyOff;
 import org.usfirst.frc.team6520.robot.commands.C_intakeOff;
 import org.usfirst.frc.team6520.robot.commands.C_intakeReverse;
 import org.usfirst.frc.team6520.robot.commands.C_motor3;
