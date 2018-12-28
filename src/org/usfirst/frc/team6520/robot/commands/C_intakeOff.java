@@ -17,7 +17,7 @@ public class C_intakeOff extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.motor3.stopMotor();
+    	RobotMap.mDriveBase.switchMode(0);
     }
 
     // Called repeatedly when this Command is scheduled to run

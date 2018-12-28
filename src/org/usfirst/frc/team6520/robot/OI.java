@@ -8,6 +8,7 @@
 package org.usfirst.frc.team6520.robot;
 
 import org.usfirst.frc.team6520.robot.commands.C_Boost;
+import org.usfirst.frc.team6520.robot.commands.C_InActive;
 import org.usfirst.frc.team6520.robot.commands.C_Key1;
 import org.usfirst.frc.team6520.robot.commands.C_Key2;
 //import org.usfirst.frc.team6520.robot.commands.C_ReleaseBoost;
@@ -70,7 +71,7 @@ public class OI {
 	public OI() {
 		motor3Controller.whenPressed(new C_motor3());
 //		intakeOff.whenPressed(new C_intakeOff());
-		intakeReverse.whenPressed(new C_intakeReverse());
+		intakeReverse.whileHeld(new C_InActive());
 		key1.whileHeld(new C_Key1());
 		key2.whileHeld(new C_Key2());
 		boost.whileHeld(new C_Boost());

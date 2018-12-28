@@ -17,6 +17,7 @@ public class DriveBase extends Subsystem {
 	public static final double distanceSpeed = 0.5;
 	public static final double angleSpeed = 0.5;
 	public static final double angleTime = 1;
+	public static double intakeMode = 0;
 	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -56,14 +57,19 @@ public class DriveBase extends Subsystem {
     
     public void teleUpdate(OI m_oi) {
     	RobotMap.mDrive.tankDrive(-m_oi.mJoystick.getRawAxis(1) * 0.6, -m_oi.mJoystick.getRawAxis(3) * 0.6);
+    	RobotMap.motor3.set(intakeMode);
     }
     
     public void boost() {
-    	RobotMap.mDrive.tankDrive(-1, -1);
+    	RobotMap.mDrive.tankDrive(1, 1);
     }
     
     public void releaseBoost() {
     	RobotMap.mDrive.tankDrive(0, 0);
+    }
+    
+    public void switchMode(double mode) {
+    	intakeMode = mode;
     }
     
 }
