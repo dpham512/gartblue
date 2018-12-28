@@ -17,7 +17,7 @@ public class C_motor3 extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.motor3.set(-0.5);
+    	RobotMap.motor3.set(-0.4);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -31,6 +31,7 @@ public class C_motor3 extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	RobotMap.motor3.stopMotor();
     }
 
     // Called when another command which requires one or more of the same

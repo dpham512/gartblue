@@ -69,12 +69,11 @@ public class OI {
 	
 	public OI() {
 		motor3Controller.whenPressed(new C_motor3());
-		intakeOff.whenPressed(new C_intakeOff());
+//		intakeOff.whenPressed(new C_intakeOff());
 		intakeReverse.whenPressed(new C_intakeReverse());
-		key1.whileHeld(new C_Key1());
-		key2.whileHeld(new C_Key2());
+		key1.whenPressed(new C_Key1());
+		key2.whenPressed(new C_Key2());
 		boost.whileHeld(new C_Boost());
-//		boost.whenReleased(new C_ReleaseBoost());
 	}
 	
 }
